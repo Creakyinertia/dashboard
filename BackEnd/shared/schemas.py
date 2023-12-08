@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 
 class Employeebase(BaseModel):
-    id:int
     name:str
     age:int 
     gender:str

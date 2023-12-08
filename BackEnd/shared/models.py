@@ -9,6 +9,7 @@ class Employees(Base):
     age = Column(Integer) 
     gender = Column(String)
     aadhar = Column(Integer)
+    address = Column(String)
     salary = Column(Integer)
     
 class Customers(Base):
