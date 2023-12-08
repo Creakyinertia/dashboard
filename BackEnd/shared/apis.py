@@ -2,14 +2,6 @@ from sqlalchemy.orm import Session
 
 from . import models, schemas
 
-# def create_customer(db: Session, employee: schemas.Customerbase):
-#     fake_hashed_password = employee.password + "notreallyhashed"
-#     db_employee = models.Employees(email=employee.email, hashed_password=fake_hashed_password)
-#     db.add(db_employee)
-#     db.commit()
-#     db.refresh(db_employee)
-#     return db_employee
-
 def get_employee_based_on_id(db: Session, Employee_id: int):
     db_employee = db.query(models.Employees).filter(models.Employees.id == Employee_id).first()
     return db_employee
