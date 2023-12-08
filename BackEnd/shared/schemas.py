@@ -7,7 +7,8 @@ class Employeebase(BaseModel):
     aadhar:int
     salary:int
     address:str
-    
+
+
 
 class Customerbase(BaseModel):
     id : int
