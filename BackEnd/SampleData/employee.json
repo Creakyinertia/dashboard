@@ -1,0 +1,92 @@
+[
+  {
+    "id":1,
+    "name":"Leanne Graham",
+    "age":22,
+    "gender":"male",
+    "aadhar":123456789011,
+    "salary":300000,
+    "address": "Apt. 556"
+  },
+  {
+    "id":2,
+    "name":"Ervin Howell",
+    "age":24,
+    "gender":"female",
+    "aadhar":123456789012,
+    "salary":320000,
+    "address": "Suite 879"
+  },
+  {
+    "id":3,
+    "name":"Clementine Bauch",
+    "age":23,
+    "gender":"male",
+    "aadhar":123456789013,
+    "salary":330000,
+    "address": "Suite 847"
+  },
+  {
+    "id":4,
+    "name":"Patricia Lebsack",
+    "age":24,
+    "gender":"male",
+    "aadhar":123456789014,
+    "salary":320000,
+    "address": "Apt. 692"
+  },
+  {
+    "id":5,
+    "name":"Chelsey Dietrich",
+    "age":22,
+    "gender":"female",
+    "aadhar":123456789011,
+    "salary":300000,
+    "address": "Suite 351"
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "age": 22,
+    "gender": "female",
+    "aadhar": 123456789011,
+    "salary": 450000,
+    "address": "Apt. 950"
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "age": 23,
+    "gender": "male",
+    "aadhar": 123456789011,
+    "salary": 430000,
+    "address": "Suite 280"
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "age": 22,
+    "gender": "female",
+    "aadhar": 123456789011,
+    "salary": 380000,
+    "address": "Suite 729"
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "age": 21,
+    "gender": "female",
+    "aadhar": 123456789011,
+    "salary": 510000,
+    "address": "Suite 449"
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "age": 23,
+    "gender": "male",
+    "aadhar": 123456789011,
+    "salary": 430000,
+    "address": "Suite 198"
+  }
+]

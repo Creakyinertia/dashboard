@@ -6,7 +6,6 @@ from shared.database import SessionLocal
 
 
 router = APIRouter(
-    
     prefix="/customer",
     tags=["customer"],
     responses={404: {"description": "Not found"}},
@@ -18,9 +17,7 @@ def get_db():
         yield db
     finally:
         db.close()
-# @router.get("/")
-# def get_all_customers(db: Session):
-#     return db.query(customers).all()
+        
 @router.get("/")
 def get_all_customers(db: Session = Depends(get_db)):
     return db.query(Customers).all()
