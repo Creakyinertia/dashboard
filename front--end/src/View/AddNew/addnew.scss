@@ -1,0 +1,24 @@
+$transparent : rgba(#fff,0.5);
+.addnew-main{
+    width: 100%;
+    height: 90%;
+    // // background-color: aliceblue;
+
+  .nav-link {
+    color: black !important; 
+  }
+
+  .nav-link.active {
+    background-color:$transparent; 
+    color: black !important; 
+  }
+  .tab-content {
+    background-color: $transparent;
+    height: 95%;
+    display: grid;
+    place-items: center;
+    margin-top: -15px;
+  }
+
+
+}
