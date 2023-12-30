@@ -1,68 +1,52 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./sidebar.scss";
-interface SideNavProps {
-  children: React.ReactNode;
-}
-
-const Sidebar: React.FC<SideNavProps> = ({ children }) => {
-  const[isOpen,setisOpen] = useState(true)
-  const toggle = () => setisOpen(!isOpen)
-  const menuItems = [
+import React from 'react'
+import { LuLayoutDashboard } from "react-icons/lu";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { MdPeopleAlt } from "react-icons/md";
+import { FaMoneyCheckAlt } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+const Sidebar = () => {
+  const items = [
     {
+      id: "1",
+      title: "Dashboard",
+      icon: <LuLayoutDashboard />,
       path: "/",
-      name: "dashboard",
-      icon: "abc",
     },
     {
-      path: "/addnew",
-      icon: "abc",
-      name: "Add new member",
+      id: "2",
+      title: "Employees",
+      icon: <FaPeopleGroup />,
+      path: "/employees",
     },
     {
-      path: "/employee",
-      name: "Employees",
-      icon: "abc",
+      id: "3",
+      title: "Customers",
+      icon: <MdPeopleAlt />,
+      path: "/customers",
     },
     {
-      path: "/customer",
-      name: "Customers",
-      icon: "abc",
-    },
-    {
+      id: "4",
+      title: "Salary",
+      icon: <FaMoneyCheckAlt />,
       path: "/salary",
-      name: "Salary",
-      icon: "abc",
-    }
+    },
   ];
-
   return (
-    <div className="contain">
-      <div style={{ width: isOpen ? "250px" : "50px" }} className="sidebar">
-        <div className="top-section">
-          <h1 className="logo" style={{ display: isOpen ? "block" : "none" }}>
-            logo
-          </h1>
-          <div className="bars" style={{ marginLeft: isOpen ? "50px" : "0px" }}>
-            {/* <FaBars onClick={toggle}/> */}
-            Bars
-          </div>
+    <div className="main-sidebar">
+      <ul>
+        <div>
+          {items?.map((item) => (
+            <Link to={item.path}>
+              <li key={item.id}>
+                <span>{item.icon}</span>
+                <span>{item.title}</span>
+              </li>
+            </Link>
+          ))}
         </div>
-        {menuItems.map((item, index) => (
-          <NavLink to={item.path} key={index} className="link">
-            <div className="icon">{item.icon}</div>
-            <div
-              className="link-text"
-              style={{ display: isOpen ? "block" : "none" }}
-            >
-              {item.name}
-            </div>
-          </NavLink>
-        ))}
-      </div>
-      <main>{children}</main>
+      </ul>
     </div>
   );
-};
+}
 
-export default Sidebar;
+export default Sidebar

@@ -1,0 +1,47 @@
+@import "../../../styles/variables.scss";
+
+* {
+  color: $light-font-color;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding: 0px 20px;
+
+  .icon {
+    font-size: 1.5em;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .icon-title {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .nav-set {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 10px;
+    span{
+        margin-right: 20px;
+    }
+    .addnew-button {
+      transition: ease 0.3s;
+      background: $purple-gradient;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      &:hover {
+        transform: translate(0px, -3px);
+      }
+    }
+  }
+}

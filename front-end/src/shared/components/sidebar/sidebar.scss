@@ -1,0 +1,53 @@
+@import '../../../styles/variables.scss';
+
+.side-wrapper{
+    background: $purple-gradient;
+    width: 200px;
+    margin: 0px 20px;
+    height: 93vh;
+    position: relative;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.side-wrapper {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.side-wrapper:before {
+    content: "";
+    position: absolute;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #e14eca;
+    transform: translate(-60px,-5px);
+}
+.side-logo{
+    font-size: 20px;
+    padding: 20px 60px ;
+    text-align: center;
+    border-bottom: 0.5px solid rgb(204, 204, 204);
+}
+
+.items{
+    padding: 15px 0 15px 20px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+    .item-title{
+        padding-left: 15px;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+    &:hover{
+        background: $light-purple-shade !important;
+    }
+}

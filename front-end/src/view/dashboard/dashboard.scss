@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.dashboard-main {
+  .panels-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    .panel {
+      background-color: $dark-varient;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      box-shadow: $shadow;
+    }
+    .panel:hover {
+      background-color: $darker-varient;
+    }
+  }
+}
+

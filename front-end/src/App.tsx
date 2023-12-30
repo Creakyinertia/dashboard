@@ -4,10 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import Routing from "./routing/Routing";
 function App() {
   return (
-    <div className="main-border">
-    <div className="main-panel">
+    <div>
       <Routing />
-    </div>
     </div>
   );
 }
