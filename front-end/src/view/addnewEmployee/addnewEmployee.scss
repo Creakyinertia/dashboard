@@ -1,0 +1,95 @@
+@import "../../styles/variables.scss";
+
+.form-main {
+  background: $dark-varient;
+  border-radius: 5px;
+
+  h3{
+    font-weight: 300;
+    padding: 20px;
+  }
+  form {
+    padding: 5vh;
+    
+
+    label:not(:last-child) {
+      width: 20vh;
+      text-align: right;
+      padding: 20px 10px;
+      font-weight: 300;
+    }
+    input[type="text"] ,input[type='number']{
+      width: 100%;
+      max-width: 1000px;
+      padding: 5px 20px;
+      background: transparent;
+      border: 1px solid rgba($light-purple-shade,0.3);
+      border-radius: 10px;
+    }
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  appearance: none; /* Remove default browser styles */
+  -webkit-appearance: none; /* For older versions of Chrome/Safari */
+  -moz-appearance: none; /* For Firefox */
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  & + label {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+margin-left: 50px;
+  width: 16px;
+  height: 16px;
+  background-color: transparent !important;
+  border: 1px solid rgba($light-purple-shade,0.3) !important;
+  border-radius: 3px;
+  margin-right: 5px;
+
+  &:checked {
+    background: $purple-gradient;
+    border-color: $purple-shade;
+  }
+}
+
+/* Radio button styles */
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid rgba($light-purple-shade,0.3);
+  border-radius: 50%;
+  margin-right: 5px;
+
+  &:checked {
+    background-color: $purple-shade;
+  }
+
+}
+
+.bt{
+    display: flex;
+    justify-content: end;
+    // background-color: antiquewhite;
+    button{
+        padding: 10px 50px;
+        border: none;
+        border-radius: 5px;
+        background: $purple-gradient;
+    }
+}
