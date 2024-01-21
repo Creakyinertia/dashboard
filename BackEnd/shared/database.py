@@ -5,7 +5,7 @@ from urllib.parse import quote_plus
 
 # encoded_password = quote_plus("Creaky@321")
 # SQLALCHEMY_DATABASE_URL = f"postgresql://postgres:{encoded_password}@localhost:5432/Dashboard"
-SQLALCHEMY_DATABASE_URL = f"postgresql://postgres:pg123@localhost:5432/Dashboard"
+SQLALCHEMY_DATABASE_URL = f"postgresql://postgres:trust@localhost:5432/dashboard"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL
